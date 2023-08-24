@@ -1,8 +1,35 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+// import Home from "./Home";
+// import Movies from "./Movies";
+// import Directors from "./Directors";
+// import Actors from "./Actors";
+// import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 function NavBar() {
-  return <div>{/*{code here}*/}</div>;
+  return (
+  <div className="navbar">
+    <li>
+      <NavLink to="/">
+        Home
+      </NavLink>
+    </li>
+    <li>
+      <NavLink to="/movies">
+        Movies
+      </NavLink>
+    </li>
+    <li>
+      <NavLink to="/directors">
+        Directors
+      </NavLink>
+    </li>
+    <li>
+      <NavLink to="/actors">
+        Actors
+      </NavLink>
+    </li>
+  </div>);
 }
 
 export default NavBar;
